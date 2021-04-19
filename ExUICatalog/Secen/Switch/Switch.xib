@@ -1,0 +1,66 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="17701" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="17703"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="NE1-1Y-dSP" customClass="Switch">
+            <rect key="frame" x="0.0" y="0.0" width="50" height="31"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <stackView opaque="NO" contentMode="scaleToFill" distribution="fillEqually" spacing="6" translatesAutoresizingMaskIntoConstraints="NO" id="d9A-Vy-HEH">
+                    <rect key="frame" x="6" y="7.5" width="38" height="16"/>
+                    <subviews>
+                        <imageView clipsSubviews="YES" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="button-switch-m-selection" translatesAutoresizingMaskIntoConstraints="NO" id="2Dr-37-E5d">
+                            <rect key="frame" x="0.0" y="0.0" width="16" height="16"/>
+                        </imageView>
+                        <imageView clipsSubviews="YES" contentMode="center" horizontalHuggingPriority="251" verticalHuggingPriority="251" image="button-switch-s-selection" translatesAutoresizingMaskIntoConstraints="NO" id="7RM-ri-hcB">
+                            <rect key="frame" x="22" y="0.0" width="16" height="16"/>
+                        </imageView>
+                    </subviews>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="16" id="h2p-jc-iYg"/>
+                    </constraints>
+                </stackView>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="M62-xA-lp0">
+                    <rect key="frame" x="3" y="4" width="23" height="23"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                    <constraints>
+                        <constraint firstAttribute="width" secondItem="M62-xA-lp0" secondAttribute="height" multiplier="1:1" id="toD-HX-8wO"/>
+                    </constraints>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="9pt-ei-s8U"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="M62-xA-lp0" firstAttribute="width" secondItem="2Dr-37-E5d" secondAttribute="width" constant="7" id="1Fx-83-qmH"/>
+                <constraint firstItem="M62-xA-lp0" firstAttribute="leading" secondItem="NE1-1Y-dSP" secondAttribute="leading" constant="3" id="JNB-NL-Jfu"/>
+                <constraint firstItem="d9A-Vy-HEH" firstAttribute="centerX" secondItem="9pt-ei-s8U" secondAttribute="centerX" id="fZN-pa-5qS"/>
+                <constraint firstItem="M62-xA-lp0" firstAttribute="centerY" secondItem="d9A-Vy-HEH" secondAttribute="centerY" id="gll-oG-Ek6"/>
+                <constraint firstItem="d9A-Vy-HEH" firstAttribute="centerY" secondItem="NE1-1Y-dSP" secondAttribute="centerY" id="ppE-hZ-fzI"/>
+            </constraints>
+            <freeformSimulatedSizeMetrics key="simulatedDestinationMetrics"/>
+            <connections>
+                <outlet property="offImageView" destination="7RM-ri-hcB" id="2Wo-8f-bXg"/>
+                <outlet property="onImageView" destination="2Dr-37-E5d" id="kiX-83-ba2"/>
+                <outlet property="selectionView" destination="M62-xA-lp0" id="ggW-DD-gc7"/>
+                <outlet property="selectionViewLeadingConstraint" destination="JNB-NL-Jfu" id="pSa-jC-jS4"/>
+                <outlet property="stackView" destination="d9A-Vy-HEH" id="qSi-pU-XKq"/>
+            </connections>
+            <point key="canvasLocation" x="-266.66666666666669" y="-80.022321428571431"/>
+        </view>
+    </objects>
+    <resources>
+        <image name="button-switch-m-selection" width="16" height="16"/>
+        <image name="button-switch-s-selection" width="16" height="16"/>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
