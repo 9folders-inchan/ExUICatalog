@@ -60,7 +60,6 @@
     [self setOn:_on];
 }
 
-
 #pragma mark - Setter
 
 - (void)setTintColor:(UIColor *)tintColor {
@@ -101,7 +100,7 @@
 }
 
 - (CGFloat)defaultLeading {
-    return 3.0f;
+    return 4.0f;
 }
 
 @end

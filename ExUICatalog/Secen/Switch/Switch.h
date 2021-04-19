@@ -13,10 +13,10 @@ NS_ASSUME_NONNULL_BEGIN
 
 @property (nonatomic, strong, nullable) UIImage *onImage;
 @property (nonatomic, strong, nullable) UIImage *offImage;
+
 @property(nullable, nonatomic, strong) UIColor *tintColor;
 
 @property(nonatomic,getter=isOn) BOOL on;
-
 - (void)setOn:(BOOL)on animated:(BOOL)animated;
 
 @end

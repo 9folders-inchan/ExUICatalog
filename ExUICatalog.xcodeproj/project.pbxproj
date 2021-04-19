@@ -69,8 +69,8 @@
 		38527B8E262D62CB000EEFD0 /* ExUICatalog */ = {
 			isa = PBXGroup;
 			children = (
-				38527BCA262D72DB000EEFD0 /* Category */,
 				38527BB4262D649C000EEFD0 /* AppDelegate */,
+				38527BCA262D72DB000EEFD0 /* Category */,
 				38527BB7262D64C1000EEFD0 /* Resources */,
 				38527BB6262D64B2000EEFD0 /* Secen */,
 			);
